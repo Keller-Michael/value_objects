@@ -26,7 +26,7 @@ ENDCLASS.
 CLASS zmke_cl_money IMPLEMENTATION.
 
   METHOD add.
-    IF currency <> me->currency.
+    IF other->currency <> me->currency.
       RETURN.
     ENDIF.
 
